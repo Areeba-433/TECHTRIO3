@@ -83,6 +83,7 @@ public class KapuaGwtJobModelConverter {
         for (JobStepProperty jobStepProperty : jobStepPropertyList) {
             GwtJobStepProperty gwtJobStepProperty = new GwtJobStepProperty();
             gwtJobStepProperty.setPropertyName(jobStepProperty.getName());
+            gwtJobStepProperty.setDescription(jobStepProperty.getDescription());
             gwtJobStepProperty.setPropertyType(jobStepProperty.getPropertyType());
             gwtJobStepProperty.setPropertyValue(jobStepProperty.getPropertyValue());
             gwtJobStepProperty.setRequired(jobStepProperty.getRequired());
@@ -163,6 +164,7 @@ public class KapuaGwtJobModelConverter {
         for (TriggerProperty triggerProperty : triggerPropertyList) {
             GwtTriggerProperty gwtTriggerProperty = new GwtTriggerProperty();
             gwtTriggerProperty.setPropertyName(triggerProperty.getName());
+            gwtTriggerProperty.setDescription(triggerProperty.getDescription());
             gwtTriggerProperty.setPropertyType(triggerProperty.getPropertyType());
             gwtTriggerProperty.setPropertyValue(triggerProperty.getPropertyValue());
             gwtTriggerPropertyList.add(gwtTriggerProperty);
